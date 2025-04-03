@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookings – LensCraft Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container logo-wrapper">
+      <a href="index.html" class="logo">
+        <img src="./logo.png" alt="LensCraft Studio Logo"
+        title="LensCraft Studio Logo / Home" />
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Booking Form Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2>Book a Session</h2>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name (Required)</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name (Required)</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address (Required)</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="type">Type of Photography</label>
+            <select id="type" name="photography-type" required>
+              <option value="">Select One</option>
+              <option value="wedding">Wedding</option>
+              <option value="portrait">Portrait</option>
+              <option value="commercial">Commercial</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Booking Date -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="booking-date">Booking Date (Required)</label>
+            <input type="date" id="booking-date" name="booking-date" required />
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="comments">Questions or Comments</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
